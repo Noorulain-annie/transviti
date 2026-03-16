@@ -1,3 +1,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-XXLight.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-XXLight.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-Light.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-Roman.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-Medium.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-Bold.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('/fonts/NeueHaasGroteskDisplayPro-XBlack.woff2') format('woff2'),
+       url('/fonts/NeueHaasGroteskDisplayPro-XBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 214 80% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 20% 10%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 14% 46%;
+
+    --accent: 214 80% 34%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 214 80% 34%;
+
+    --radius: 0.5rem;
+
+    --nav-bg: 0 0% 100%;
+    --nav-foreground: 220 10% 30%;
+    --nav-active: 214 80% 34%;
+    --badge-promoted: 210 20% 96%;
+    --applicants: 214 80% 34%;
+    --stat-value: 214 80% 34%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 10% 30%;
+    --sidebar-primary: 214 80% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 220 20% 10%;
+    --sidebar-border: 214 20% 90%;
+    --sidebar-ring: 214 80% 34%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Neue Haas Grotesk Display Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+}

@@ -1,9 +1,22 @@
-export default function App() {
-  return (
-    <div className="p-10">
-      <h1 className="text-sm font-bold text-blue-500">
-        Tailwind + React + Vite 8 Works 🚀
-      </h1>
-    </div>
-  );
-}
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./pages/Index.jsx";
+import NotFound from "./pages/NotFound.jsx";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </QueryClientProvider>
+);
+
+export default App;
+
+
+
