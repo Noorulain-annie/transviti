@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="flex justify-center pt-6">
+      <div className="flex justify-center pt-6 pb-6">
         <div className="flex gap-6 w-full px-12" style={{ maxWidth: '1400px' }}>
           <ProfileSidebar />
 
@@ -15,7 +15,7 @@ const Index = () => {
           <main className="flex-1 min-w-0 space-y-6">
             {/* Header */}
             <div>
-              <h1 className="text-xl font-bold text-foreground">
+              <h1 className="text-xl font-semibold text-foreground" style={{ fontWeight: 500 }}>
                 Find your Dream Job,<span className="text-primary">Albert!</span>
               </h1>
               <p className="text-sm text-muted-foreground mt-1">

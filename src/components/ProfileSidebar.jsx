@@ -3,9 +3,9 @@ import coverPhoto from "@/assets/cover-photo.png";
 import avatarImg from "@/assets/profile.png";
 
 const stats = [
-  { label: "Profile Visitors", value: "1.2k" },
-  { label: "Resume Viewers", value: "890" },
-  { label: "My Jobs", value: "45" },
+  { label: "Profile Visitors", value: "140" },
+  { label: "Resume Viewers", value: "20" },
+  { label: "My Jobs", value: "88" },
 ];
 
 const ProfileSidebar = () => {

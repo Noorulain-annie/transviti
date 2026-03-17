@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <div className="space-y-3">
       {/* Search row */}
-      <div className="flex items-center rounded-lg bg-card px-3 py-2 shadow-sm w-[950px]">
+      <div className="flex items-center rounded-lg bg-card px-3 py-2 shadow-sm w-[940px]">
         <div className="flex-1 relative">
           <input
             type="text"
@@ -36,7 +36,7 @@ const SearchBar = () => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className="h-8 px-3 rounded-lg border border-gray-400 bg-card text-xs text-muted-foreground hover:bg-muted transition-colors"
+            className="h-8 px-3 rounded-sm border border-gray-400 bg-card text-xs text-muted-foreground bg-muted transition-colors"
           >
             {tag}
           </button>

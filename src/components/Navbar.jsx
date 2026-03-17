@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 import logo from "@/assets/logo.png";
-import avatarImg from "@/assets/profile.png";
+import avatarImg2 from "@/assets/profile2.png";
 
 const navLinks = [
   { label: "Find Jobs", active: true },
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border">
       <div className="flex justify-center w-full">
-        <div className="flex items-center gap-40 h-16 w-full px-12" style={{ maxWidth: '1400px' }}>
+        <div className="flex items-center gap-52 h-16 w-full px-12" style={{ maxWidth: '1400px' }}>
           {/* Left + Nav */}
           <div className="flex items-center gap-6">
             <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
@@ -49,7 +49,7 @@ const Navbar = () => {
               Resume Builder
             </button>
             <img
-              src={avatarImg}
+              src={avatarImg2}
               alt="Avatar"
               className="h-9 w-9 rounded-full object-cover border-2 border-border"
             />

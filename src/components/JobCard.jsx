@@ -3,7 +3,7 @@ import turntinIcon from "../assets/turntin.png";
 
 const JobCard = ({ promoted = false }) => {
   return (
-    <div className="bg-card rounded-xl border border-border py-3.5 pl-3.5 pr-0 flex flex-col gap-1 w-[180px] shrink-0">
+    <div className="bg-card rounded-xl border border-border py-3.5 pl-4 pr-0 flex flex-col gap-1 w-[180px] shrink-0">
       {/* Promoted badge */}
       {promoted && (
         <span className="text-[10px] font-bold text-foreground tracking-wide">
@@ -17,7 +17,7 @@ const JobCard = ({ promoted = false }) => {
           <img src={turntinIcon} alt="Company logo" className="h-6 w-6 object-contain" />
         </div>
         <div className="min-w-0">
-          <h4 className="text-[13px] font-refular text-foreground leading-tight truncate">
+          <h4 className="text-[13px] font-regular text-foreground leading-tight truncate">
             UI/UX Designer
           </h4>
           <p className="text-[11px] text-foreground mt-0.5 truncate">Teams</p>
@@ -33,13 +33,13 @@ const JobCard = ({ promoted = false }) => {
       {/* Time + Applicants */}
       <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
         <Clock className="h-3 w-3 shrink-0" />
-        <span className="whitespace-nowrap">1 day ago</span>
+        <span className="whitespace-nowrap">1day ago</span>
         <span>|</span>
         <span className="text-primary font-regular whitespace-nowrap">22 applicants</span>
       </div>
 
       {/* Actions */}
-      <div className="flex items-center gap-7 mt-0.5">
+      <div className="flex items-center gap-6 mt-0.5">
         <button className="h-8 w-24 rounded-lg bg-primary text-primary-foreground text-[11px] font-regular hover:opacity-90 transition-opacity">
           Apply Now
         </button>
