@@ -1,7 +1,7 @@
 import JobCard from "./JobCard";
 
-const JobSection = ({ title, linkText, promoted = false, rows = 1 }) => {
-  const totalCards = rows * 5;
+const JobSection = ({ title, linkText, promoted = false }) => {
+  const totalCards = 10;
 
   return (
     <section className="space-y-4">
@@ -11,7 +11,8 @@ const JobSection = ({ title, linkText, promoted = false, rows = 1 }) => {
           {linkText}
         </button>
       </div>
-      <div className="grid grid-cols-5 gap-4">
+
+      <div className="flex flex-wrap gap-2 -ml-0">
         {Array.from({ length: totalCards }).map((_, i) => (
           <JobCard key={i} promoted={promoted} />
         ))}
@@ -21,6 +22,3 @@ const JobSection = ({ title, linkText, promoted = false, rows = 1 }) => {
 };
 
 export default JobSection;
-
-
-

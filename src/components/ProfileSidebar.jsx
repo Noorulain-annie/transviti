@@ -1,6 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import coverPhoto from "@/assets/cover-photo.png";
-import avatarImg from "@/assets/Oval.png";
+import avatarImg from "@/assets/profile.png";
 
 const stats = [
   { label: "Profile Visitors", value: "1.2k" },

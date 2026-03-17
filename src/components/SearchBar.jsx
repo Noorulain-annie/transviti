@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <div className="space-y-3">
       {/* Search row */}
-      <div className="flex items-center rounded-lg bg-card px-3 py-2 shadow-sm">
+      <div className="flex items-center rounded-lg bg-card px-3 py-2 shadow-sm w-[950px]">
         <div className="flex-1 relative">
           <input
             type="text"
